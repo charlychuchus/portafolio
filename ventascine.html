@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas cinepolis</title>
+</head>
+    <header>
+        <h1 align="center">Venta de boletos</h1>
+    </header>
+<body background="img/CINEPOLIS.png" style="background-repeat: no-repeat; background-size: 100%;">
+
+    <table style="width: 100%; border: saddlebrown solid;" >
+        <tr>
+            <td style="width: 33%; border: saddlebrown solid;">
+                <fieldset style="width: 90%;">
+                    <legend>Infomracion de la pelicula</legend>
+
+                    <table style="width: 100%; border: saddlebrown solid;">
+                        <tr>
+                            <td style="width: 70%;">
+                                <label for=""><b>Pelicula</b></label><br>
+            
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Scream 6</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Mario Bros: La pelicula</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">65: Aal borde d ela extincion</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">ACdemia de conejos</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Shazam!</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Eo</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Creed III</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">The whale</label><br>
+                                <input type="radio" name="pelicula" id="pelicula">
+                                <label for="pelicula">Ant-Man and The Wasp: Quantumania</label><br>
+                            </td>
+                            <td>
+                                <label for=""><b>Horario</b></label><br>
+
+                                <input type="time" name="Horario" id="Horario">
+                            </td>
+                        </tr>
+                    </table>
+            
+                </fieldset>
+            </td>
+
+            <td style="width: 33%; border: saddlebrown solid;">
+                <fieldset>
+                    <legend>Boletos</legend>
+                        <table style="width: 100%; border: saddlebrown;">
+
+                            <label for="adulto">Adulto - 65$     </label> <input type="number" name="adulto" id="adulto" style=" width: 15%;"><br>
+                            <label for="ninos">Niños - 55$     </label> <input type="number" name="ninos" id="ninos" style=" width: 15%;"><br>
+                            <label for="3raedad">3ra edad - 55$     </label> <input type="number" name="3raedad" id="3raedad" style=" width: 15%;"><br>
+                            <label for="vip">2X1 folios VIP - 32.5$     </label> <input type="number" name="vip" id="vip" style=" width: 15%;"><br>
+
+
+                        </table>
+                </fieldset>
+            </td>
+            <td style="width: 33%; border: saddlebrown solid;"> 
+                <fieldset>
+                    <legend>Pago</legend>
+                    <table style="width: 100%; border: saddlebrown solid;">
+                        <tr>
+                            <h3 align="center">Infomracion personal</h3>
+
+                            <td>
+
+                                <label for="nombre">Nombre(s)</label><br>
+                                <input type="text" name="nombre" id="nombre" placeholder="Nombre(s)" required><br>
+                                <label for="correo">Correo electronico</label><br>
+                                <input type="text" name="correo" id="correo" placeholder="Correo electronico" required>
+                            </td>
+                            <td>
+                                <label for="apaellidos">Apellidos(s)</label><br>
+                                <input type="text" name="apaellidos" id="apaellidos" placeholder="Apellidos(s)" required><br>
+                                <label for="club">Tarjeta club cinepolis</label><br>
+                                <input type="text" name="club" id="club" placeholder="Tarjeta club cinepolis">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="align-content: center;">
+                                <h3>Metodo de Pago</h3>
+                                <input type="radio" name="pago" id="pago">
+                                <label for="pago">Tarjeta de credito/debito</label><br>
+                                <input type="radio" name="pago" id="pago">
+                                <label for="pago">Click to play</label><br>
+                                <input type="radio" name="pago" id="pago">
+                                <label for="pago">Club Cinepolis</label><br>
+                                <input type="radio" name="pago" id="pago">
+                                <label for="pago">Paypal</label>
+                            </td>
+                        </tr>
+
+                    </table>
+                </fieldset>
+            </td>
+
+        </tr>
+        <tr >
+            <table style="border: solid; width: 100%;">
+                <tr>
+                    <td align="center">
+                            <input type="submit">
+                            <input type="reset">
+                    </td>
+                </tr>
+            </table>
+        </tr>
+    </table>
+
+    
+    
+</body>
+</html>
