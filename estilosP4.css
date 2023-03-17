@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(176, 144, 179);
+}
+
+h2{
+    color: blue;
+    size: 10px;
+    font-weight: bold;
+}
+
+#uno, #dos{
+    background-color: rgba(174, 238, 110, 0.671);
+}
+
+#text{
+    color: rgb(163, 241, 85);
+}
+
+#morado{
+    color: rgb(166, 70, 255);
+    font-style: italic;
+    font-weight: bold;
+}
