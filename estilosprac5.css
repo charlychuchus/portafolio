@@ -1,0 +1,35 @@
+table{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: rgb(82, 82, 82);
+}
+
+h1{
+    color: rgb(221, 221, 221);
+}
+
+h2{
+    color: rgb(221, 221, 221);
+}
+
+h3{
+    color: rgb(221, 221, 221);
+}
+
+label{
+    color: rgb(221, 221, 221);
+}
+
+td{
+    color: rgb(221, 221, 221);
+}
+
+
+legend{
+    color: white;
+    font-size: 20px;
+}
