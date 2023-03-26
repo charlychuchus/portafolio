@@ -1,0 +1,135 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+@font-face {
+font-family: tabuti;
+src: url(multipeyote/tabuti/Tabuti.ttf);
+}
+h1{
+    font-family:tabuti ;
+    text-align:center;
+}
+h2{
+    font-family:tabuti ;
+}
+
+/*BARRA DE NAVEGACION */
+#nav ul{ 
+    list-style-type: none; 
+    text-align: center; 
+} 
+
+#nav li{ 
+    display: inline; 
+    text-align: center; 
+    margin: 0 10px 0 0; 
+    font-family:tabuti ;
+    font-size: 25px;
+} 
+
+#navegador li a { 
+    padding: 2px 7px 2px 7px; 
+    color: #666; 
+    background-color: #b92d2d; 
+    border: 1px solid #000000; 
+    text-decoration: none; 
+} 
+
+#navegador li a:hover{ 
+    background-color: #c75e5e; 
+    color: #000000; 
+}
+
+#tabnav{ 
+    border: 1px solid rgb(255, 255, 255); 
+    background-color: #ffffff;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; 
+}
+
+#tabnav td{
+    vertical-align: middle;
+}
+
+/*NEWSLETTER */
+#tabnews{
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255); 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 97%; 
+    text-align: justify;
+}
+
+#tabnews td{
+    padding: 5px;
+}
+
+
+/*CARRUSEL*/
+
+
+/*MULTIMEDIA*/
+#multidiv{
+    background-color: rgb(255, 255, 255);
+}
+
+#multitab{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    width: 99.9%;
+}
+
+#multitab td{
+    width: 33%;
+    font-size: 30px;
+    font-family:tabuti ;
+    
+}
+
+#multitab iframe{
+    width: 99%;
+}
+
+/*PROMOCIONES*/
+#tabprom{
+    width: 97%;
+    background-color: rgb(255, 255, 255);
+    margin-left: auto; 
+    margin-right: auto; 
+}
+
+#tabprom img{
+    width: 90%;
+}
+
+/*SYUDA Y COMENTARIOS*/
+#aytab{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 97%; 
+    
+}
+
+#aytab td{
+    width: 25%;
+    text-align: center;
+    font-family: tabuti;
+    font-size: 25px;
+}
+
+#aytab a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#aytab img{
+    width: 30%;
+}
+
+#dyuda{
+    background-color: #ffffff;
+}
