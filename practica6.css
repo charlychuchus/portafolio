@@ -1,0 +1,57 @@
+@font-face {
+    font-family: delicious;
+    src: url(fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
+    }
+div{ 
+    display: block; 
+    width: 400px; 
+    height: auto;
+    padding: 20px; 
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center; 
+    margin: 30px auto;   
+    background-color: rgb(147, 160, 255); 
+    font-family: delicious;
+} 
+
+div:hover{ 
+    display: block; 
+    width: 400px; 
+    padding: 20px; 
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center; 
+    margin: 15px auto;   
+    background-color: rgb(193, 251, 187); 
+    font-family: delicious;
+
+    -moz-border-radius: 30px; 
+    -webkit-border-radius: 30px; 
+    border-radius: 30px; 
+
+    -moz-transform: skew(20deg); 
+    -webkit-transform: skew(20deg); 
+    transform: skew(20deg); 
+}
+
+div:active{ 
+    display: block; 
+    width: 400px; 
+    padding: 20px; 
+    border: 1px solid rgb(0, 0, 0); 
+    text-align: center; 
+    margin: 15px auto;   
+    background-color: rgb(251, 217, 187); 
+    font-family: delicious;
+
+    -moz-border-radius: 30px; 
+    -webkit-border-radius: 30px; 
+    border-radius: 30px; 
+
+    -moz-transform: skew(30deg); 
+    -webkit-transform: skew(30deg); 
+    transform: skew(30deg); 
+
+    -moz-box-shadow: rgb(0, 0, 0) 10px 15px 15px ; 
+    -webkit-box-shadow: rgb(0, 0, 0) 10px 15px 15px ; 
+    box-shadow: rgb(0, 0, 0) 10px 15px 15px ; 
+}
