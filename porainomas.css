@@ -1,0 +1,73 @@
+body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@font-face {
+    font-family: fuente;
+    src: url(fonts/Delicious_Handrawn/DeliciousHandrawn-Regular.ttf);
+    }
+
+#cuadroderecha{
+    display: block;
+    border: 1px solid rgb(68, 68, 68);
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    background-color: rgb(16, 202, 41);
+    font-family: fuente;
+
+    position: absolute;
+    right: 30px;
+
+    -moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius: 10px; 
+}
+#titulo{
+    margin: 1px 9px;
+}
+
+#menu{
+    display: block;
+    border: 1px solid black;
+    width: fit-content;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 30px;
+    overflow: hidden;
+    background-color: rgb(15, 187, 10);
+    text-align: center;
+    font-family: fuente;
+}
+#menu:hover{
+    display: block;
+    border: 0px solid black;
+    width: fit-content;
+    height: 40px;
+    margin: auto;
+    position: absolute;
+    left: 30px;
+    overflow: visible;
+    background-color: rgb(76, 221, 71);
+    text-align: center;
+
+}
+
+#textmenu{
+    display: block;
+    border: 1px solid black;
+    margin: 0px 0px; 
+    width: 100%; 
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(15, 187, 10);
+}
+#textmenu:hover{
+    display: block;
+    border: 1px solid black;
+    margin: 0px 0px; 
+    width: 100%; 
+    padding: 8px 0px 8px 0px;
+    background-color: rgb(67, 230, 62);
+}
