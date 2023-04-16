@@ -1,0 +1,128 @@
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+@font-face {
+font-family: tabuti;
+src: url(multipeyote/tabuti/Tabuti.ttf);
+}
+h1{
+    font-family:tabuti ;
+    text-align:center;
+}
+h2{
+    font-family:tabuti ;
+}
+/*BARRA DE NAVEGACION */
+#nav ul{ 
+    list-style-type: none; 
+    text-align: center; 
+} 
+
+#nav li{ 
+    display: inline; 
+    text-align: center; 
+    margin: 0 10px 0 0; 
+    font-family:tabuti ;
+    font-size: 25px;
+} 
+
+#navegador li a { 
+    padding: 2px 7px 2px 7px; 
+    color: #666; 
+    background-color: #b92d2d; 
+    border: 1px solid #000000; 
+    text-decoration: none; 
+} 
+
+#navegador li a:hover{ 
+    background-color: #c75e5e; 
+    color: #000000; 
+}
+
+#tabnav{ 
+    border: 1px solid rgb(255, 255, 255); 
+    background-color: #ffffff;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 100%; 
+    
+}
+
+#tabnav td{
+    vertical-align: middle;
+}
+
+
+/*-----Cuerpo-----*/
+#cuerpo{
+    display: block;
+    width: 50%;
+    background-color: rgb(255, 255, 255);
+
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+#cuerpo p{
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: justify;
+    font-size: 19px;
+}
+#cuerpo h3{
+    margin-left: 5px;
+}
+#margencueropo{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*SYUDA Y COMENTARIOS*/
+#aytab{
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 97%; 
+    
+}
+
+#aytab td{
+    width: 25%;
+    text-align: center;
+    font-family: tabuti;
+    font-size: 25px;
+}
+
+#aytab a{
+    text-decoration: none;
+    color: #000000;
+}
+
+#aytab img{
+    width: 30%;
+}
+
+#dyuda{
+    background-color: #ffffff;
+}
