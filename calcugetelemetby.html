@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcu</title>
+    <script src="calcugetelemetby.js"></script>
+    <style>
+        #divicion{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="divicion">
+        <label for="num1">Escribe un numero</label><br>
+        <input type="text" name="num1" id="num1"><br>
+    </div>
+    <div id="divicion">
+        <label for="num2">Escribe otro numero</label><br>
+        <input type="text" name="num2" id="num2"><br><br>
+    </div>
+
+    
+
+    <input type="button" name="Sumar" id="Sumar" value="Sumar" onclick="suma()">
+    <input type="button" name="Restar" id="Restar" value="Restar" onclick="resta()">
+    <input type="button" name="Multi" id="Multi" value="Multi" onclick="multi()">
+    <input type="button" name="Divi" id="Divi" value="Divi" onclick="divi()">
+
+    <p>El resultado es:</p>
+    <p id="resultado" name="resultado"></p>
+
+
+
+</body>
+</html>
