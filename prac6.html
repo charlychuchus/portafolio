@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB FORMS API</title>
+    <style>
+        body{
+            background-color: rgb(252, 249, 249);
+        }
+        #maintittle{
+            background-color: white;
+            text-align: center;
+            display: block;
+            border: solid 1px black;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 5px;
+        }
+        #cuerpo1{
+            background-color: white;
+            display: block;
+            border: solid 1px black;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+            padding: 5px;
+            padding-bottom: 50px;
+        }
+        p{
+            text-align: justify;
+        }
+        h2{
+            padding-left: 20px;
+        }
+        h3{
+            padding-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="maintittle">
+        <h1>WEB FORMS API</h1>
+    </div>
+
+    <div id="cuerpo1">
+        <h2>Que es?</h2>
+        <p>HTTP no es solo para servir páginas web. HTTP también es una plataforma eficaz 
+            para compilar API que exponen servicios y datos. HTTP es simple, flexible y 
+            omnipresente. Casi cualquier plataforma que se pueda considerar tiene una 
+            biblioteca HTTP, por lo que los servicios HTTP pueden llegar a una amplia gama 
+            de clientes, incluidos exploradores, dispositivos móviles y aplicaciones de 
+            escritorio tradicionales. <br><br> Esta interfaz proporciona métodos para crear y 
+            modificar los elementos FORM usando el DOM.</p>
+        <h2>Importancia</h2>
+        <p>Esta API web resulta de mucha utilidad porque trae consigo todos estas ventajas:</p>
+        <ul>
+            <li><b>Implementar una interfaz de usuario web enriquecida :</b> puede ser difícil y tedioso diseñar e implementar una interfaz de usuario con instalaciones HTML básicas, especialmente si la página tiene un diseño complejo, una gran cantidad de contenido dinámico y objetos interactivos de usuario completos.</li>
+            <li><b>Separación de cliente y servidor:</b> en una aplicación web, el cliente (explorador) y el servidor son programas diferentes que a menudo se ejecutan en equipos diferentes (e incluso en diferentes sistemas operativos). Por lo tanto, las dos mitades de la aplicación comparten muy poca información; pueden comunicarse, pero normalmente intercambian solo pequeños fragmentos de información simple.</li>
+            <li><b>Ejecución sin estado:</b> cuando un servidor web recibe una solicitud de una página, busca la página, la procesa, la envía al explorador y, a continuación, descarta toda la información de la página. Si el usuario vuelve a solicitar la misma página, el servidor repite toda la secuencia y vuelve a procesar la página desde cero. Por otra parte, un servidor no tiene memoria de páginas procesadas; la página no tiene estado.</li>
+            <li><b>Funcionalidades de cliente desconocidas:</b> en muchos casos, las aplicaciones web son accesibles para muchos usuarios que usan exploradores diferentes. Los exploradores tienen diferentes funcionalidades, lo que dificulta la creación de una aplicación que se ejecutará igualmente bien en todos ellos.</li>
+        </ul>
+
+        <h2>Ejemplo:</h2>
+        <h3>Enviar datos a través de una API Form</h3>
+
+    <form id="my-form" action="" method="post" style="margin-left: 50px;">
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Teléfono:</label><br>
+        <input type="text" id="phone" name="phone"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        // Agregar un manejador de eventos para el envío del formulario
+        document.getElementById("my-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevenir el envío del formulario por defecto
+
+            // Datos a enviar a través de la API Form
+            var data = {
+                name: document.getElementById("name").value,
+                email: document.getElementById("email").value,
+                phone: document.getElementById("phone").value
+            };
+
+            // Enviar la solicitud HTTP utilizando la biblioteca Fetch de JavaScript
+            fetch("https://api.example.com/form", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Authorization": "Bearer your_api_key"
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data); // Imprimir la respuesta de la API en la consola del navegador
+            })
+            .catch(error => {
+                console.error(error); // Manejar cualquier error de la solicitud HTTP
+            });
+        });
+    </script>
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>
