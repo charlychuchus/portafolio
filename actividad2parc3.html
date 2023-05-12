@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Obtener totales del formulario</title>
+    <link rel="stylesheet" href="estilos.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">	
+    
+    <link rel="stylesheet" href="actividad2parc3.css">
+
+    <script type="text/javascript" src="PDF/PDF/js/jquery/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="PDF/PDF/js/jquery/jquery-ui-1.8.17.custom.min.js"></script>
+    <script type="text/javascript" src="PDF/PDF/jspdf.js"></script>
+    <script type="text/javascript" src="PDF/PDF/jspdf.plugin.addimage.js"></script>
+    <script type="text/javascript" src="PDF/PDF/jspdf.plugin.standard_fonts_metrics.js"></script>
+    <script type="text/javascript" src="PDF/PDF/jspdf.plugin.split_text_to_size.js"></script>
+    <script type="text/javascript" src="PDF/PDF/jspdf.plugin.from_html.js"></script>
+
+</head>
+<script>
+var total;
+function califica(){
+        var total=0;
+    	for (var x=1;x<=5;x++)
+    	{
+        var res=0;
+        var nom="r"+x;
+        var resul=document.getElementsByName(nom);
+        for(var i=0;i<resul.length;i++)
+        {
+            if(resul[i].checked==true)
+                res=parseInt(resul[i].value);
+        }
+        total=total+res;
+        document.getElementById("total").innerHTML="Puntos obtenidos: "+total+" Puntos";
+        }
+        if(total==25)
+        	document.getElementById("comentario").innerHTML="EXCELENTE!!!";
+        else
+        	if(total==20)
+        	document.getElementById("comentario").innerHTML="Buena!!";
+        else
+        	if(total==15)
+        	document.getElementById("comentario").innerHTML="Regular!!";
+        else
+        	if(total<=10)
+        	document.getElementById("comentario").innerHTML="Estudia un poco más";
+
+    }
+
+    function genera(){
+        //
+        doc.setFontSize(40);
+        //
+        doc.setTextColor(9,7,121);
+        doc.text(40,20,"Encuesta");
+        doc.setTextColor(17,122,209);
+        doc.setFontSize(30);
+        doc.text(40,20,"Es importante tu participacion");
+        doc.setTextColor(0,0,0);
+        doc.setFontSize(20);
+        doc.text(20,50,"20 puntos. Excelente \r Todas tus espuestas fueron correctas");
+        doc.text(20,70,"15 puntos. Muy bien \r Obtuviste 3 preguntas correctas");
+        doc.text(20,90,"10 puntos. regular \r Obtuviste 2 preguntas correctas");
+        doc.text(20,110,"0 puntos. \r Todas tus espuestas fueron incorrectas");
+   
+        var string = doc.output('datauristring');
+
+        $('iframe').attr('scr', string);
+
+    }
+</script>
+
+<body>
+    <h1>Responde la encuesta</h1>
+	
+    
+<div id="contiene">
+	
+<form>
+<div>
+	<h2>Tu opinión es importante</h2>
+
+	<ul>
+
+		<li>Pregunta 1</li>
+		<input type="radio" name="r1" id="r1" value="5"/>Respuesta 1 Pregunta 1
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 2 Pregunta 1
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 3 Pregunta 1
+		<input type="radio" name="r1" id="r1" value="0"/>Respuesta 4 Pregunta 1
+		
+		<li>Pregunta 2</li>
+		<input type="radio" name="r2" id="r2" value="5"/>Respuesta 1 Pregunta 2
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 2 Pregunta 2
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 3 Pregunta 2
+		<input type="radio" name="r2" id="r2" value="0"/>Respuesta 4 Pregunta 2
+
+		<li>Pregunta 3</li>
+		<input type="radio" name="r3" id="r3" value="5"/>Respuesta 1 Pregunta 3
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 2 Pregunta 3
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 3 Pregunta 3
+		<input type="radio" name="r3" id="r3" value="0"/>Respuesta 4 Pregunta 3
+
+        <li>Pregunta 4</li>
+		<input type="radio" name="r4" id="r4" value="5"/>Respuesta 1 Pregunta 4
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 2 Pregunta 4
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 3 Pregunta 4
+		<input type="radio" name="r4" id="r4" value="0"/>Respuesta 4 Pregunta 4
+
+        <li>Pregunta 5</li>
+		<input type="radio" name="r5" id="r5" value="5"/>Respuesta 1 Pregunta 4
+		<input type="radio" name="r5" id="r5" value="0"/>Respuesta 2 Pregunta 4
+		<input type="radio" name="r5" id="r5" value="0"/>Respuesta 3 Pregunta 4
+		<input type="radio" name="r5" id="r5" value="0"/>Respuesta 4 Pregunta 4
+	</ul>
+	
+</div>
+<div id="boto"></div>
+    <input type="button" value="Calificar" id="botones" onclick="califica()">
+    <input type="button" value="Generar PDF" id="botones"  onclick="genera()">
+</div>
+</form>
+<p></p>
+
+
+    <p id="total">   </p>
+    <p id="comentario">   </p>
+
+
+<iframe frameborder="0" width="600" height="500"></iframe>
+</div>
+</body>
+</html>

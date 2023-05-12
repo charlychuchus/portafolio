@@ -1,0 +1,31 @@
+p{
+    text-align: center;
+}
+
+#contiene{
+    display: block;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 7px;
+}
+#boto{
+    text-align: center;
+    width: 40%;
+}
+#botones{
+    width: 45%;
+}
+
+h1{
+    text-align: center;
+}
+body{
+    background-color: rgb(245, 245, 241);
+}
+
+
+
+
+
