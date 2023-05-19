@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen Parcial 3</title>
+
+    <script>
+        function evaluar(){
+            var nom=document.getElementById("nombre").value;
+            var fcha = new Date(document.getElementById("fecha").value);
+            var f1 = new Date(2023, 03, 30);
+            var f2 = new Date(2023, 05, 01);
+
+            
+            const images = {
+                10: `https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.bootic.io%2Fblog%2F2018%2F12%2F19%2Fnuevo-promociones-2x1-en-tu-tienda-bootic&psig=AOvVaw3or_ccQeKqtcDCuCbauXLP&ust=1684592833742000&source=images&cd=vfe&ved=0CA4QjRxqFwoTCKCrrfjKgf8CFQAAAAAdAAAAABAD`
+                // Todos los tipos de billete con sus imágenes
+            };
+            
+          
+
+            if(fcha>f1 && fcha<f2){
+                var mensaje="Tienes un descuento";
+                document.getElementById("final").innerHTML=mensaje;
+                document.getElementById("simon").innerHTML=images;
+            }else{
+                var mensaje="No tienes nigun descuento";
+                document.getElementById("final").innerHTML=mensaje;
+            }
+        }
+    </script>
+    <style>
+        body{
+            background-color: rgb(228, 228, 222);
+        }
+        #cuerpo{
+            background-color: white;
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        #contenedor{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 10px;
+        }
+        #boton{
+            text-align: center;
+        }
+        h1{
+            text-align: center;
+        }
+
+        
+
+
+    </style>
+
+
+
+</head>
+<body>
+    <h1>Examen parcial 3</h1>
+
+    <div id="cuerpo">
+
+
+        <div id="contenedor">
+            <label for="nombre">Tu nombre</label><br>
+            <input type="text" name="nombre" id="nombre"><br><br>
+
+            <label for="fecha">Tu fecha de nacimiento</label><br>
+            <input type="date" name="fecha" id="fecha"><br><br>
+
+            <div id="boton">
+                <input type="button" name="boton" id="boton" value="Enviar formulario" style="width: 80%;" onclick="evaluar()">
+<br>
+            </div>
+
+            <p id="final"></p>
+            <div id="simon">
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
